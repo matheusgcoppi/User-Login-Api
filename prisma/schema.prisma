@@ -1,0 +1,20 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-1.1.x", "linux-musl"]
+}
+
+datasource db {
+  provider          = "sqlserver"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("DATABASE_SHADOW_URL")
+}
+
+model UserInfo {
+  id        Int     @id @default(autoincrement())
+  firstName String?
+  lastName  String?
+  email     String  @unique
+  password  String
+  age       Int
+  role      String?
+}
