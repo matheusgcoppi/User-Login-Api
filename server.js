@@ -9,11 +9,13 @@ app.use(cors({
 })
 );
 
+const port = process.env.PORT || 8080
+
 app.use(express.json())
 
 app.use(require("./routes.js"))
-app.listen(8080, () => {
-    console.log('server at port 8080 is running');
+app.listen(port, () => {
+    console.log(`server at port ${port} is running`);
 });
 
 router.get("/", (req, res) => {
