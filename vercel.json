@@ -1,3 +1,15 @@
-{
-    "redirects": [{ "source": "/routes", "destination": "/" }]
+  {
+    "name": "deploy-node",
+    "version": 2,
+    "public": true,
+    "build": {
+        "src":"./server.js",
+        "use": "@vercel/node"
+    },
+    "routes": [
+      {
+        "src": "/(.*)*",
+        "dest": "./routes.js"
+      }
+    ]
   }
