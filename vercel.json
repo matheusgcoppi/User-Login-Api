@@ -1,7 +1,6 @@
   {
     "name": "deploy-node",
     "version": 2,
-    "public": true,
     "build": [
       {
         "src":"./server.js",
