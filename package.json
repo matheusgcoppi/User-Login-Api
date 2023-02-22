@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build",
+    "buildCommand": "npm run build",
     "start": "npm run build && node dist/server.js",
     "dev": "nodemon -L server.js"
   },

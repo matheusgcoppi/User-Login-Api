@@ -1,6 +1,7 @@
   {
     "name": "deploy-node",
     "version": 2,
+    
     "build": [
       {
         "src":"./server.js",
