@@ -4,7 +4,8 @@
   "main": "UserController.js",
   "proxy": "http://localhost:3000",
   "engines": {
-    "node": "16.x"
+    "node": "16.x",
+    "npm": "9.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
