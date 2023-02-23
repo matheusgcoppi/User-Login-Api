@@ -19,7 +19,6 @@ app.listen(port, () => {
 });
 
 router.get("/", (req, res) => {
-    res.send('teste');
     return res.sendStatus(200)
 
 })
