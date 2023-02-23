@@ -15,7 +15,7 @@ app.use(express.json())
 
 app.use(require("./routes.js"))
 app.listen(port, () => {
-    console.log(`server at port ${port} is running`);
+    console.log(`server at tport ${port} is running`);
 });
 
 router.get("/", (req, res) => {
