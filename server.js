@@ -19,7 +19,7 @@ app.listen(port, () => {
 });
 
 router.get("/", (req, res) => {
-    return res.status(200).json({ message: 'ok' });
+    return res.status(200).json();
 
 })
 
